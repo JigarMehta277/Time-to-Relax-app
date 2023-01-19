@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 400 24px "Permanent Marker", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#heading h1 {
+    position: absolute;
+    left: 42%;
+    top: 15%;
+    font-size: 400;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 50px;
+}
+
+#slct_season {
+    position: absolute;
+    left: 37%;
+    top: 15%;
+    font-size: 400;
+    font-family: "Lobster", sans-serif;
+    font-size: 50px;
+    display: none;
+    color: white;
+}
+
+#start {
+    position: absolute;
+    left: 49%;
+    top: 40%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#footer_content {
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    font-family: 'Secular One', sans-serif;
+}
+
+#seasons {
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    gap: 50px;
+}
+
+.seasonLink {
+    margin: 5em;
+    background-color: #6161b0;
+    color: white;
+    border: none;
+    font-family: 'Kalam', sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: 1s;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+}
+
+
+.seasonLink:hover:nth-child(1) {
+    transform: scale(1.5);
+    background-image: url("../images/summer.gif");
+}
+
+.seasonLink:hover:nth-child(2) {
+    transform: scale(1.5);
+    background-image: url("../images/monsoon.gif");
+}
+
+.seasonLink:hover:nth-child(3) {
+    transform: scale(1.5);
+    background-image: url("../images/winter.gif");
+}

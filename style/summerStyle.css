@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 400 24px "Permanent Marker", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("../images/summer.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.back-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 5px 10px 5px 10px;
+    text-decoration: none;
+    padding: 1em;
+    background-color: aqua;
+    box-shadow: 0px 10px 10px 10px grey;
+    transition: 2s ease-in-out;
+}
+
+.back-button:hover {
+    transform: scaleX(1.5);
+}
+
+#h1 {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+#main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: 200px;
+    transform: scale(1);
+}
+
+
+.background-circle {
+    background-color: #87CEEB;
+    opacity: 50%;
+    height: 320px;
+    width: 320px;
+    top: -10px;
+    left: -10px;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.smallCircleContainer {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 8s linear forwards infinite;
+    transform-origin: bottom center;
+}
+
+.smallCircle {
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.main_div.grow {
+    animation: grow 3s linear forwards;
+}
+
+.main_div.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+.sun {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    border-radius: 50%;
+    background-color: yellow;
+    transition: 2s ease-in-out;
+}
+
+#div_label {
+    position: absolute;
+    color: rebeccapurple;
+    top: 12%;
+    font-weight: bold;
+    font-size: 20px;
+    left: 78%;
+}
+
+.sun:hover {
+    transform: scale(1.5);
+    background: #FFFF00;
+}
+
+.bubbles {
+    position: absolute;
+    top: 50%;
+    border: 2px solid white;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: skyblue;
+    opacity: 30%;
+    animation: bubbles 5s ease-in-out infinite;
+}
+
+
+.bubbles:nth-child(2) {
+    animation: bubbles2 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(3) {
+    animation: bubbles3 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(4) {
+    animation: bubbles4 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(5) {
+    animation: bubbles5 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(6) {
+    animation: bubbles6 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(7) {
+    animation: bubbles7 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(8) {
+    animation: bubbles8 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(9) {
+    animation: bubbles9 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(10) {
+    animation: bubbles10 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(11) {
+    animation: bubbles11 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(12) {
+    animation: bubbles12 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(13) {
+    animation: bubbles13 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(14) {
+    animation: bubbles14 5s ease-in-out infinite;
+}
+
+.bubbles:nth-child(15) {
+    animation: bubbles15 5s ease-in-out infinite;
+}
+
+
+@keyframes bubbles {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: -10%;
+        top: 50%;
+    }
+
+}
+
+@keyframes bubbles2 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 50%;
+        top: 100%;
+    }
+
+}
+
+@keyframes bubbles3 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 50%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles4 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 40%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles5 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 30%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles6 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 20%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles7 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 10%;
+        top: 110%;
+    }
+
+}
+
+@keyframes bubbles8 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 60%;
+        top: 110%;
+    }
+
+}
+
+@keyframes bubbles9 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 70%;
+        top: 110%;
+    }
+
+}
+
+@keyframes bubbles10 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 80%;
+        top: 110%;
+    }
+
+}
+
+@keyframes bubbles11 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 90%;
+        top: 110%;
+    }
+
+}
+
+@keyframes bubbles12 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 60%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles13 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 70%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles14 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 80%;
+        top: -10%;
+    }
+
+}
+
+@keyframes bubbles15 {
+    from {
+        top: 50%;
+        left: 50%;
+    }
+
+    to {
+        left: 90%;
+        top: -10%;
+    }
+
+}
+
+@keyframes sun_shrink {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

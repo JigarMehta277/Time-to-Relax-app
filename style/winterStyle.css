@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: 400 24px "Permanent Marker", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("../images/winter_bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#h1 {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#main_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: 200px;
+    transform: scale(1);
+}
+
+
+.background-circle {
+    background-color: white;
+    opacity: 80%;
+    height: 320px;
+    width: 320px;
+    top: -10px;
+    left: -10px;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.back-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 5px 10px 5px 10px;
+    text-decoration: none;
+    padding: 1em;
+    background-color: aqua;
+    box-shadow: 0px 10px 10px 10px grey;
+    transition: 2s ease-in-out;
+}
+
+.back-button:hover {
+    transform: scaleX(1.5);
+}
+
+.circle {
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.smallCircleContainer {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 8s linear forwards infinite;
+    transform-origin: bottom center;
+}
+
+.smallCircle {
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.main_div.grow {
+    animation: grow 3s linear forwards;
+}
+
+.main_div.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+.sun {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    border-radius: 50%;
+    background-color: yellow;
+    transition: 2s ease-in-out;
+}
+
+#div_label {
+    position: absolute;
+    color: rebeccapurple;
+    top: 12%;
+    font-weight: bold;
+    font-size: 20px;
+    left: 78%;
+}
+
+.snowflake {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: -10%;
+    left: 5%;
+    animation: snowflake_animation 5s ease-in-out infinite;
+}
+
+.snowflake:nth-child(2) {
+    left: 8%;
+    animation-delay: 2.1s;
+}
+
+.snowflake:nth-child(3) {
+    left: 11%;
+    animation-delay: 1.2s;
+}
+
+.snowflake:nth-child(4) {
+    left: 14%;
+    animation-delay: 2.3s;
+}
+
+.snowflake:nth-child(5) {
+    left: 17%;
+    animation-delay: 3.2s;
+}
+
+.snowflake:nth-child(6) {
+    left: 20%;
+    animation-delay: 1.3s;
+}
+
+.snowflake:nth-child(7) {
+    left: 23%;
+    animation-delay: 5.7s;
+}
+
+.snowflake:nth-child(8) {
+    left: 26%;
+    animation-delay: 1.9s;
+}
+
+.snowflake:nth-child(9) {
+    left: 29%;
+    animation-delay: 3.7s;
+}
+
+.snowflake:nth-child(10) {
+    left: 32%;
+    animation-delay: 1.4s;
+}
+
+.snowflake:nth-child(11) {
+    left: 35%;
+    animation-delay: 2.2s;
+}
+
+.snowflake:nth-child(12) {
+    left: 38%;
+    animation-delay: 3.6s;
+}
+
+.snowflake:nth-child(13) {
+    left: 41%;
+    animation-delay: 4.1s;
+}
+
+.snowflake:nth-child(14) {
+    left: 44%;
+    animation-delay: 2.4s;
+}
+
+.snowflake:nth-child(15) {
+    left: 47%;
+    animation-delay: 1.3s;
+}
+
+.snowflake:nth-child(16) {
+    left: 50%;
+    animation-delay: 1.3s;
+}
+
+.snowflake:nth-child(17) {
+    left: 53%;
+    animation-delay: 1.2s;
+}
+
+.snowflake:nth-child(18) {
+    left: 56%;
+    animation-delay: 4.7s;
+}
+
+.snowflake:nth-child(19) {
+    left: 59%;
+    animation-delay: 1s;
+}
+
+.snowflake:nth-child(20) {
+    left: 62%;
+    animation-delay: 4.1s;
+}
+
+.snowflake:nth-child(21) {
+    left: 65%;
+    animation-delay: 5.5s;
+}
+
+.snowflake:nth-child(22) {
+    left: 68%;
+    animation-delay: 1.4s;
+}
+
+.snowflake:nth-child(23) {
+    left: 71%;
+    animation-delay: 1s;
+}
+
+.snowflake:nth-child(24) {
+    left: 74%;
+    animation-delay: 1.3s;
+}
+
+.snowflake:nth-child(25) {
+    left: 77%;
+    animation-delay: 6.1s;
+}
+
+.snowflake:nth-child(26) {
+    left: 80%;
+    animation-delay: 1.2s;
+}
+
+.snowflake:nth-child(27) {
+    left: 83%;
+    animation-delay: 5.4s;
+}
+
+.snowflake:nth-child(28) {
+    left: 86%;
+    animation-delay: 2.3s;
+}
+
+.snowflake:nth-child(29) {
+    left: 89%;
+    animation-delay: 7.1s;
+}
+
+.snowflake:nth-child(30) {
+    left: 92%;
+    animation-delay: 1.6s;
+}
+
+.snowflake:nth-child(31) {
+    left: 95%;
+    animation-delay: 6.1s;
+}
+
+.snowflake:nth-child(32) {
+    left: 98%;
+    animation-delay: 1.1s;
+}
+
+
+
+
+.sun:hover {
+    transform: scale(1.5);
+    background: #FFFF00;
+
+}
+
+@keyframes snowflake_animation {
+    from {
+        top: -8%;
+    }
+
+    to {
+        top: 101%;
+    }
+}
+
+@keyframes sun_shrink {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
